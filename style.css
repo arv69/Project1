@@ -43,15 +43,14 @@ body {
 }
 
 #center {
-    
 	width: 100%;
 
 	padding: 10px 50px;
 }
 
 #center h1 {
-	font-size: 50px;
-	line-height: 55px;
+	font-size: 4.6vw;
+	line-height: 4.3vw;
 }
 
 #center-in {
@@ -62,9 +61,9 @@ body {
 	justify-content: space-between;
 }
 #center-in p {
-	font-size: 20px;
+	font-size: 2vw;
 	font-weight: 600;
-	line-height: 25px;
+	line-height: 2.5vw;
 	margin-left: 50px;
 }
 #right {
@@ -104,8 +103,104 @@ body {
 #bottom {
 	height: 40%;
 	width: 100%;
-	background-color: red;
 	background-image: url("https://images.unsplash.com/photo-1508418717103-8b56bcf03360?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 	background-size: cover;
 	background-position: 0 20%;
+}
+
+@media (max-width: 600px) {
+	#nav {
+		height: 60px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		justify-content: flex-end;
+		gap: 20px;
+		padding: 0 20px;
+	}
+
+	#nav h4 {
+		font-size: 12px;
+		font-weight: 500;
+	}
+
+	#nav i {
+		background-color: black;
+		color: white;
+		font-size: 15px;
+		padding: 7px;
+		font-weight: 500;
+		border-radius: 50%;
+	}
+	#center {
+		width: 100%;
+
+		padding: 15px 20px;
+	}
+
+	#center h1 {
+		font-size: 11vw;
+		font-weight: 500;
+		line-height: 13vw;
+	}
+
+	#center-in {
+		height: 200px;
+		width: 100%;
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 24px;
+	}
+	#center-in p {
+		font-size: 3.3vw;
+		font-weight: 600;
+		line-height: 4.3vw;
+		margin-left: 50px;
+	}
+	#right {
+		width: 100%;
+	}
+	.elem {
+		padding: 10px 0px;
+		border-top: 2px solid black;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.elem i {
+		font-size: 15px;
+		opacity: 1;
+		padding-right: 10px;
+		color: #303030;
+	}
+
+	.elem a {
+		color: #303030;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 14px;
+	}
+
+	.elem:hover i {
+		opacity: 1;
+	}
+
+	.elem:hover {
+		background-color: rgb(233, 233, 233);
+	}
+
+	.elem:hover a {
+		text-decoration: underline;
+	}
+
+	#bottom {
+		height: 33%;
+		width: 100%;
+		background-image: url("https://images.unsplash.com/photo-1508418717103-8b56bcf03360?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+		background-size: cover;
+		background-position: 0 20%;
+	}
 }
